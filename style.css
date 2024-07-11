@@ -203,7 +203,7 @@ p {
 }
 
 .custom-collapse{
-  background-color: var(--white-color)!important;
+  background-color: transparent;
 }
 
 .navbar-toggler  {
