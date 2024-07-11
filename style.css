@@ -1,0 +1,662 @@
+/*
+==================================
+           general
+==================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root {
+    --primary-font: 'Ubuntu', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --primary-color: #fc2103;
+    --secondary-color: #fc9900;
+    --common-transition: all 0.4s ease-in-out;
+    --primary-font: "Inconsolata", monospace;;
+    --secondary-font: 'Open Sans', sans-serif;
+    --white-color: white;
+    --black-color: black;
+    --gray-color: gray;
+    --fqa-items-h4: rgb(47, 45, 45);
+    --background-color: white;
+    --fs-btn-2-color: rgb(49, 47, 47);
+    --fs-background: url("img/first-section-bg/full-size.jpg") no-repeat;
+}
+
+
+.dark-theme{
+  --background-color:#212529 ;
+   --white-color: black;
+   --black-color: white;
+   --gray-color: gray;
+   --fqa-items-h4: rgb(222, 212, 212);
+   --fs-btn-2-color: rgb(220, 213, 213);
+   --fs-background: url("img/first-section-bg/fs-dark-bg-full-size.jpg")
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+body{
+    font-family: var(--secondary-font);
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--black-color);
+    margin-bottom: 20px;
+    font-family: var(--primary-font);
+}
+
+
+h2 {
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: var(--black-color);
+    font-family: var(--primary-font);
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--black-color);
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+p {
+    
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+
+.main-btn{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 2px solid transparent;
+    height: 2rem;
+    padding: 0 10px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    width: 6.6rem;
+    box-shadow: 5px -3px 20px 0px rgba(0,0,0,0.19),
+    0px 6px 6px 0px rgba(0,0,0,0.23);
+    margin-right: 20px;
+}
+
+.main-btn:hover{
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    transition: var(--common-transition);
+}
+
+
+/*
+==================================
+           Nav Selection
+==================================
+*/
+
+.logo{
+    width: 90px;
+}
+
+.nav-selection {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* .custom-nav{
+    background-color: white !important;
+} */
+
+.custom-nav a{
+    color: var(--primary-color) !important;
+    font-weight: 700;
+    font-size: 0.8rem !important;
+    letter-spacing: 1px;
+    margin-right: 20px;
+}
+
+.custom-nav a:hover{
+    color: var(--secondary-color) !important;
+}
+
+.custom-nav a:focus{
+    color:var(--secondary-color) !important;
+}
+
+
+.nav-button{
+   
+    background-color: var(--primary-color);
+    border: 2px solid transparent;
+    height: 2rem;
+    padding: 0 10px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    width: 6.6rem;
+    
+}
+
+.nav-button:hover{
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--primary-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.header-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+    transition: all .2s linear;
+    
+}
+
+.theme-icon i {
+  font-size: 2.3rem;
+  color: var(--black-color);
+  padding: 0 !important;
+}
+
+.theme-icon i:hover{
+  color: var(--secondary-color);
+  transition: var(--common-transition);
+}
+
+.custom-collapse{
+  background-color: var(--white-color)!important;
+}
+
+.navbar-toggler  {
+  color: var(--secondary-color);
+  font-size: 3rem;
+}
+
+
+
+
+/*
+==================================
+           First Selection
+==================================
+*/
+
+
+
+.first-section-items{
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+}
+
+.fsi-2{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: var(--black-color)
+}
+
+.custom-first-section{
+    background: var(--fs-background);
+    background-size:cover;
+    background-attachment: center;
+}
+
+.fs-btn-1{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 2px solid transparent;
+    height: 2rem;
+    padding: 0 10px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    width: 6.6rem;
+    box-shadow: 5px -3px 20px 0px rgba(0,0,0,0.19),
+    0px 6px 6px 0px rgba(0,0,0,0.23);
+    margin-right: 20px;
+}
+
+.fs-btn-1:hover{
+    background-color:var(--white-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    transition: var(--common-transition);
+} 
+
+.fs-btn-2{
+    color: black;
+    background-color:white;
+    border: 2px solid transparent;
+    height: 2rem;
+    padding: 0 10px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    width: 6.6rem;
+    box-shadow: 5px -3px 20px 0px rgba(28, 28, 28, 0.19),
+    0px 6px 6px 0px rgba(0,0,0,0.23);
+}
+
+.fs-btn-2:hover{
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    transition: var(--common-transition);
+}
+
+/*
+==================================
+           Counter Selection
+==================================
+*/
+
+.counter-box{
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    height: 10rem;
+}
+
+.counter-item{
+    text-align: center;
+}
+
+.counter-item p{
+    margin: 0;
+}
+
+
+/*
+==================================
+           About Selection
+==================================
+*/
+.about-box {
+   padding-top: 4rem;
+   padding-bottom: 4rem;
+   color: var(--black-color)
+}
+
+.about-list li::before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f00c";
+   color: var(--secondary-color);
+   font-size: 1.2rem;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900;
+}
+
+.about-img img{
+    border-radius: 10px;
+}
+
+ /*
+  ==================================
+          3rd Section
+  ==================================
+  */ 
+  
+
+  .s-box-3rd{
+    padding: 5rem 0;
+    background: url("https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center;
+    color: white;
+  }
+
+   /*
+  ==================================
+          explore Section/card
+  ==================================
+  */ 
+
+  .custom-card{
+    border: 0;
+    background-color: var(--background-color);
+    color: var(--black-color);
+  }
+
+  .explore-text{
+    color: var(--black-color);
+  }
+
+  .card-body{
+    padding: 0;
+    border: 0;
+    margin: 0 ;
+  }
+
+
+  .size {
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    
+  }
+
+  .price{
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+    margin-right: 3px;
+  }
+  .prv-price{
+    /* need */
+    color: gray; 
+    letter-spacing: 2px;
+  }
+
+  .card{
+    position: static  !important;
+  }
+
+   /*
+  ==================================
+          Testimonial Section
+  ==================================
+  */
+
+
+
+
+
+  .review-section{
+    background-color: var(--primary-color);
+    padding: 5rem 0 4rem;
+    color:var(--white-color);
+    z-index: 0;
+  }
+ 
+  .carousel-indicators{
+    z-index: 0;
+  }
+
+  .carousel-item img{
+    width: 100px !important;
+    border-radius: 50%;
+  }
+
+  .carousel-item{
+    padding: 9rem 0;
+    text-align: center;
+    
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border-radius: 20px;
+    margin-top: 3rem;
+  }
+
+  .carousel-caption{
+    color: var(--black-color)
+  }
+
+  .carousel-indicators {
+    bottom: -3rem;
+  }
+  .carousel-indicators button{
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+  }
+  .carousel-indicators button:active{
+   background-color: #fc9900;
+  }
+
+
+  
+   /*
+  ==================================
+          FQA Section
+  ==================================
+  */
+
+  .fqa-items h4{
+    font-weight: 700;
+    /* need */
+    color: var(--fqa-items-h4);
+  }
+
+  .fqa-items p{
+    /* need */
+    color: rgb(135, 128, 128);
+    font-weight: 500;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    line-height: 2.2rem
+  }
+
+  .faq-section{
+    padding: 4rem 0;
+  }
+
+  .faq-section h2{
+    margin-bottom: 4rem;
+  }
+  
+
+  /*
+  ==================================
+          4th Section
+  ==================================
+  */ 
+
+  .s-4th{
+    background: url(./img/s-4th-bg/bg-3.jpg) no-repeat center;
+    background-size: cover;
+    background-position: 0 71px;
+    background-attachment: fixed;
+    padding: 4rem 0;
+  }
+
+  .s-4th h2{
+    margin: 0;
+    color: white
+  }
+
+  .s-4th-button{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 2px solid transparent;
+    height: 2rem;
+    padding: 0 10px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    width: 6.6rem;
+    box-shadow: 5px -3px 20px 0px rgba(0,0,0,0.19),
+    0px 6px 6px 0px rgba(0,0,0,0.23);
+    margin-right: 20px;
+  }
+
+  .s-4th-button:hover{
+    background-color:transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    transition: var(--common-transition);
+  }
+
+   /*
+  ==================================
+          News Section
+  ==================================
+  */ 
+
+  .news-section{
+    padding: 5rem 0;
+  }
+
+
+
+  .news-section input {
+    border: 2px solid transparent;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: var(--white-color);
+    border: 2px solid var(--black-color);
+    transition: all 0.5s;
+  }
+  
+  .news-section input:focus {
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0px 0px 0px 7px var(--primary-color);
+    background-color: var(--white-color);
+  }
+
+   /*
+  ==================================
+          Footer Section
+  ==================================
+  */ 
+
+  footer{
+    background-color: var(--primary-color);
+  }
+
+  .footer-items{
+    height: 11rem;
+    display: grid;
+    place-content: center;
+  }
+
+  .footer-link{
+    word-spacing: 20px;
+  }
+
+  .footer-link a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-icon-link {
+    word-spacing: 20px;
+    margin-top: 20px;
+  }
+
+  .footer-icon-link a {
+    color: white;
+  }
+
+  .copy-write{
+    color: white;
+    margin: 0;
+    font-size: small;
+  }
+
+
+
+
+
+
+  /* The switch - the box around the slider */
+#theme-toggle-button {
+  font-size: 9px;
+  position: relative;
+  display: inline-block;
+  width: 7em;
+  cursor: pointer;
+  margin-left: 10px;
+  transform: translateY(-17px); 
+}
+
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+
+/* move button to right when checked */
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+/* show/hide sun and moon based on checkbox state */
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+
+/* show or hide background items on checkbox state */
+#cloud {
+  opacity: 1;
+}
+
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#toggle:checked + svg #stars {
+  opacity: 1;
+}
+
+
